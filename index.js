@@ -1,27 +1,29 @@
 
-function addNumbers (num1, num2) {
-    return num1 + num2
+const numArray = [100, 10]
+
+function addNumbers (array) {
+    return array[0] + array[1]
 }
 
 
-function subtractNumbers (num1, num2) {
-    return num1 - num2
+function subtractNumbers (array) {
+    return array[0] - array[1]
 }
 
 
-function multiplyNumbers (num1, num2) {
-    return num1 * num2
+function multiplyNumbers (array) {
+    return array[0] * array[1]
 }
 
 
-function divideNumbers (num1, num2) {
-    return num1 / num2
+function divideNumbers (array) {
+    return array[0] / array[1]
 }
 
-console.log(addNumbers(100, 10))
+console.log(addNumbers(numArray))
 
-console.log(subtractNumbers(100, 10))
+console.log(subtractNumbers(numArray))
 
-console.log(multiplyNumbers(100,10))
+console.log(multiplyNumbers(numArray))
 
-console.log(divideNumbers(100, 10))
+console.log(divideNumbers(numArray))
