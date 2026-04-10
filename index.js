@@ -5,34 +5,41 @@ const historyArray = []
 
 function addNumbers(array) {
 
-    let results = array[0] + array[1]
+    let answer = array[0] + array[1]
+    const addHistory = {}
 
-    return results
+    addHistory["operands"] = array
+    addHistory["operator"] = "+"
+    addHistory["result"] = answer
+
+    historyArray.push(addHistory)
+
+    return answer
 
 }
 
 
 function subtractNumbers(array) {
 
-    let results = array[0] - array[1]
+    let answer = array[0] - array[1]
 
-    return results
+    return answer
 }
 
 
 function multiplyNumbers(array) {
 
-    let results = array[0] * array[1]
+    let answer = array[0] * array[1]
 
-    return results
+    return answer
 }
 
 
 function divideNumbers(array) {
 
-    let results = array[0] / array[1]
+    let answer = array[0] / array[1]
 
-    return results
+    return answer
 }
 
 console.log(addNumbers(numArray))
@@ -42,3 +49,5 @@ console.log(subtractNumbers(numArray))
 console.log(multiplyNumbers(numArray))
 
 console.log(divideNumbers(numArray))
+
+console.log(historyArray)
