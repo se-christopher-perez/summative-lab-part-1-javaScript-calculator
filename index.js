@@ -1,23 +1,38 @@
 
 const numArray = [100, 10]
 
-function addNumbers (array) {
-    return array[0] + array[1]
+const historyArray = []
+
+function addNumbers(array) {
+
+    let results = array[0] + array[1]
+
+    return results
+
 }
 
 
-function subtractNumbers (array) {
-    return array[0] - array[1]
+function subtractNumbers(array) {
+
+    let results = array[0] - array[1]
+
+    return results
 }
 
 
-function multiplyNumbers (array) {
-    return array[0] * array[1]
+function multiplyNumbers(array) {
+
+    let results = array[0] * array[1]
+
+    return results
 }
 
 
-function divideNumbers (array) {
-    return array[0] / array[1]
+function divideNumbers(array) {
+
+    let results = array[0] / array[1]
+
+    return results
 }
 
 console.log(addNumbers(numArray))
