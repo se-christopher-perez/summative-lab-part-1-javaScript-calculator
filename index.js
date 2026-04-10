@@ -13,9 +13,12 @@ const historyArray = []
 
 
 // This function will calculate the elements within the arrays through addition
-function addNumbers (array) {
+function addNumbers(array) {
     // Performs the math operation on the two numbers in the array.
     let answer = array[0] + array[1]
+
+    // Could be used to check variables and values are correct
+    console.log(array, array[0], array[1])
 
     // Checks if input array parameter is proper for the function
     if (array.length === 2) {
@@ -34,7 +37,7 @@ function addNumbers (array) {
 }
 
 // This function will calculate the elements within the arrays through subtraction
-function subtractNumbers (array) {
+function subtractNumbers(array) {
     // Performs the math operation on the two numbers in the array.
     let answer = array[0] - array[1]
 
@@ -55,7 +58,7 @@ function subtractNumbers (array) {
 
 
 // This function will calculate the elements within the arrays through multiplication
-function multiplyNumbers (array) {
+function multiplyNumbers(array) {
     // Performs the math operation on the two numbers in the array.
     let answer = array[0] * array[1]
 
@@ -74,7 +77,7 @@ function multiplyNumbers (array) {
 }
 
 // This function will calculate the elements within the arrays through division
-function divideNumbers (array) {
+function divideNumbers(array) {
     // Performs the math operation on the two numbers in the array.
     let answer = array[0] / array[1]
 
@@ -94,7 +97,7 @@ function divideNumbers (array) {
 }
 
 // This function will capture the operands, operator, and results from the math calculations, store them into an object and then store them into historyArray
-function addToHistory (array, operator, results) {
+function addToHistory(array, operator, results) {
     // This is an empty object variable I use to buld the history profile
     let dummyObject = {}
 
@@ -109,11 +112,11 @@ function addToHistory (array, operator, results) {
 }
 
 // This function displays the history of calculations made
-function showHistory () {
+function showHistory() {
     // This conditional determines whether we have previous calculations or none
     if (historyArray.length > 0) {
         console.log(historyArray)
-        
+
     } else {
         // If no record is found, the user will get an error message
         console.error("You have no stored calculations!")
@@ -122,33 +125,42 @@ function showHistory () {
 }
 
 showHistory()
+// You have no stored calculations!
 
 console.log(addNumbers(numArray))
+// 110
 
-console.log(addNumbers(numArray2))
+// console.log(addNumbers(numArray2))
 
-console.log(subtractNumbers(numArray))
+// console.log(subtractNumbers(numArray))
 
-console.log(multiplyNumbers(numArray))
+// console.log(multiplyNumbers(numArray))
 
-console.log(divideNumbers(numArray))
+// console.log(divideNumbers(numArray))
 
-console.log(historyArray)
+// console.log(historyArray)
 
 showHistory()
+// [ { operands: [ 100, 10 ], operator: '+', result: 110 } ]
 
 console.log(divideNumbers(numArray3))
+// 11
 
-console.log(historyArray)
+// console.log(historyArray)
 
-showHistory()
+// showHistory()
 
 console.log(addNumbers(badArray))
+// Insufficient operands!
 
-console.log(addNumbers(numArray4))
+// console.log(addNumbers(numArray4))
 
-console.log(addNumbers(numArray2))
+// console.log(addNumbers(numArray2))
 
-console.log(addNumbers(badArray2))
+// console.log(addNumbers(badArray2))
 
 showHistory()
+// [
+//   { operands: [ 100, 10 ], operator: '+', result: 110 },
+//   { operands: [ 33, 3 ], operator: '/', result: 11 }
+// ]
