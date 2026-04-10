@@ -4,6 +4,7 @@ const numArray = [100, 10]
 const numArray2 = [25, 5]
 const numArray3 = [33, 3]
 const numArray4 = [45, 8]
+//These variables I use to test my conditionals and conditionals
 const badArray = [1]
 const badArray2 = [1, 2, 34, 5, 67, 8, 910]
 
@@ -92,22 +93,29 @@ function divideNumbers (array) {
     }
 }
 
+// This function will capture the operands, operator, and results from the math calculations, store them into an object and then store them into historyArray
 function addToHistory (array, operator, results) {
+    // This is an empty object variable I use to buld the history profile
     let dummyObject = {}
 
+    // Here I create keys and values(properties) to store into the object
     dummyObject["operands"] = array
     dummyObject["operator"] = operator
     dummyObject["result"] = results
 
+    // Finally, data is recorded and sent to historyArray
     historyArray.push(dummyObject)
 
 }
 
+// This function displays the history of calculations made
 function showHistory () {
+    // This conditional determines whether we have previous calculations or none
     if (historyArray.length > 0) {
         console.log(historyArray)
         
     } else {
+        // If no record is found, the user will get an error message
         console.error("You have no stored calculations!")
     }
 
