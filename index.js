@@ -1,9 +1,10 @@
 
 const numArray = [100, 10]
+const anotherNumArray = [25, 5]
 
 const historyArray = []
 
-function addNumbers(array) {
+function addNumbers (array) {
 
     let answer = array[0] + array[1]
 
@@ -14,7 +15,7 @@ function addNumbers(array) {
 }
 
 
-function subtractNumbers(array) {
+function subtractNumbers (array) {
 
     let answer = array[0] - array[1]
 
@@ -24,7 +25,7 @@ function subtractNumbers(array) {
 }
 
 
-function multiplyNumbers(array) {
+function multiplyNumbers (array) {
 
     let answer = array[0] * array[1]
 
@@ -34,7 +35,7 @@ function multiplyNumbers(array) {
 }
 
 
-function divideNumbers(array) {
+function divideNumbers (array) {
 
     let answer = array[0] / array[1]
 
@@ -55,7 +56,21 @@ function addToHistory (array, operator, results) {
 
 }
 
+function showHistory () {
+
+    if (historyArray.length > 0) {
+        console.log(historyArray)
+    } else {
+        console.error("You have no stored calculations!")
+    }
+
+}
+
+showHistory()
+
 console.log(addNumbers(numArray))
+
+console.log(addNumbers(anotherNumArray))
 
 console.log(subtractNumbers(numArray))
 
@@ -64,3 +79,11 @@ console.log(multiplyNumbers(numArray))
 console.log(divideNumbers(numArray))
 
 console.log(historyArray)
+
+showHistory()
+
+console.log(divideNumbers(anotherNumArray))
+
+console.log(historyArray)
+
+showHistory()
