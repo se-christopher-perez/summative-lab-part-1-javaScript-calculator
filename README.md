@@ -1,7 +1,5 @@
 # summative-lab-part-1-javaScript-calculator
 
-Code by Christopher Perez
-
 Summary
 A simple calculate that takes two operands and calculaters a operational result beased on the function.
 It then stores the results. Users may check back on their previous results or be told there are no results.
