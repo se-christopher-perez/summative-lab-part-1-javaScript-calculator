@@ -3,7 +3,7 @@
 const numArray = [100, 10]
 const numArray2 = [25, 5]
 const numArray3 = [33, 3]
-const numArray4 = [45, 8]
+const numArray4 = [48, 8]
 //These variables I use to test my conditionals and conditionals
 const badArray = [1]
 const badArray2 = [1, 2, 34, 5, 67, 8, 910]
@@ -17,8 +17,8 @@ function addNumbers(array) {
     // Performs the math operation on the two numbers in the array.
     let answer = array[0] + array[1]
 
-    // Could be used to check variables and values are correct
-    console.log(array, array[0], array[1])
+    // consol.log() Could be used to check variables and values are correct
+    // console.log(array, array[0], array[1])
 
     // Checks if input array parameter is proper for the function
     if (array.length === 2) {
@@ -132,16 +132,24 @@ console.log(addNumbers(numArray))
 
 // console.log(addNumbers(numArray2))
 
-// console.log(subtractNumbers(numArray))
+console.log(subtractNumbers(numArray2))
+// 20
 
-// console.log(multiplyNumbers(numArray))
+console.log(multiplyNumbers(numArray3))
+// 99
 
-// console.log(divideNumbers(numArray))
+console.log(divideNumbers(numArray4))
+// 6
 
 // console.log(historyArray)
 
 showHistory()
-// [ { operands: [ 100, 10 ], operator: '+', result: 110 } ]
+// [
+//   { operands: [ 100, 10 ], operator: '+', result: 110 },
+//   { operands: [ 25, 5 ], operator: '-', result: 20 },
+//   { operands: [ 33, 3 ], operator: '*', result: 99 },
+//   { operands: [ 48, 8 ], operator: '/', result: 6 }
+// ]
 
 console.log(divideNumbers(numArray3))
 // 11
@@ -162,5 +170,8 @@ console.log(addNumbers(badArray))
 showHistory()
 // [
 //   { operands: [ 100, 10 ], operator: '+', result: 110 },
+//   { operands: [ 25, 5 ], operator: '-', result: 20 },
+//   { operands: [ 33, 3 ], operator: '*', result: 99 },
+//   { operands: [ 48, 8 ], operator: '/', result: 6 },
 //   { operands: [ 33, 3 ], operator: '/', result: 11 }
 // ]
